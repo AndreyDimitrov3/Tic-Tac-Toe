@@ -1,0 +1,41 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-bottom: 37.6px;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+}
+
+.xBackgroundImage {
+    background-image: url("assets/x-symbol-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.oBackgroundImage {
+    background-image: url("assets/letter-o-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+}
+
+@media screen and (max-width: 500px) {
+    .square {
+        width: 100px;
+        height: 100px;
+    }
+}
